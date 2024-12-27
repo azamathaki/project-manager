@@ -1,0 +1,30 @@
+// question: what is this 'project manager'? and what can i do with it?
+// answer: this project can help you to work with employees easly. You create company in the app and you add employees to it and you give levels on every user so that-
+// you can easly post task that task will be given an user based on level you gave to user.
+
+
+// this is the structore of 'project manager'.
+// users have different type of levels which tasks will be given based on users' level 
+// each task can have one owner which is user (worker)
+// and once user made project done user will be able to post that given project so admin can check
+                                                                                            
+
+                 .> task (project (level=advanced)) < - - > user (level=advanced) < - - > post (project)          
+                /                   
+               /
+	      . - > task (project (level=intermadiete)) < - - > user (level=intermadiete) < - - > post (project)
+             /
+            /
+admin - -> . - - -> task (project (level=pre-intermediete)) < - - > user (level=pre-intermadiete) < - - > post (project)
+            \
+             \
+              . - > task (project (level=beginner)) < - - > user (level=beginner) < - - > post (project)
+               \
+                \
+                 .> task (project (basic)) < - - > user (level=basic) < - - > post (project)
+                  \
+                    ...
+
+
+admin (employer) can do create company (like group but not chat) in the app then admin will be able to add employees in it.
+and admin can post tasks and can check task reply(employee's post) and more futures upcoming ...
